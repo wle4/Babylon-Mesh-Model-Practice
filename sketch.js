@@ -30,10 +30,9 @@ var createScene = function () {
 
     // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.7;
-
-    var newsphere = createSphere(0, 1, 0, 2);
-    newsphere.material = hexMat('#ff0000');
     
+    var solar = new meshModel('solar_system.glb',0.1);
+
     return scene;
 };
         window.initFunction = async function() {
